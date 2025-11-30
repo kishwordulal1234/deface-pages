@@ -17,3 +17,5 @@ https://haxor.my.id/p2
 
 https://tools.prinsh.com/home/?index
 
+https://tools.prinsh.com/home/?tools=jso
+
