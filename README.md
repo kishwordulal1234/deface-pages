@@ -2,8 +2,8 @@
 
 
 #thank u 
-
-
+Password : CytoXteam
+for cyto active shell
 
 https://script-deface-generator.prinsh.com/
 
