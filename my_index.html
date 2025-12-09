@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HACKED BY UNKNONE-hart</title> 
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Import Scary Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Share+Tech+Mono&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        /* ANIME BACKGROUND */
+        background: url(https://nathanprinsley-files.prinsh.com/data-1/images/NathanPrinsley-dark-anime.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        color: white;
+        font-family: 'Share Tech Mono', monospace;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* CRT Scanline Overlay */
+    .scanlines {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            rgba(255,255,255,0),
+            rgba(255,255,255,0) 50%,
+            rgba(0,0,0,0.2) 50%,
+            rgba(0,0,0,0.2)
+        );
+        background-size: 100% 4px;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    /* Dark Overlay for Mood */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Darker to make the sad text pop */
+        z-index: 1;
+    }
+
+    /* Centering Container */
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        z-index: 20;
+    }
+
+    /* Scary Glitch Text */
+    h1 {
+        font-family: 'Creepster', cursive;
+        font-size: 80px;
+        margin: 0;
+        color: red;
+        text-shadow: 4px 4px 0px #330000;
+        animation: shake 0.5s infinite;
+        letter-spacing: 5px;
+    }
+
+    /* The Sad Quote Box */
+    .sub-text {
+        font-size: 22px;
+        color: #ddd; /* Slightly grey/white for sadness */
+        text-shadow: 0 0 5px red;
+        margin-top: 30px;
+        text-transform: uppercase;
+        background-color: rgba(0,0,0,0.85);
+        display: inline-block;
+        padding: 20px 30px;
+        border-left: 3px solid red;
+        border-right: 3px solid red;
+        border-radius: 10px;
+        line-height: 1.8;
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    }
+
+    /* Shake Animation */
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    /* Footer Bar */
+    .footer-bar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: black;
+        border-top: 3px solid red;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 14px;
+        z-index: 30;
+        box-shadow: 0 0 20px red;
+    }
+
+    a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: white;
+        text-shadow: 0 0 10px white;
+    }
+
+    /* Initial Overlay to force click */
+    #start-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    #start-screen h2 {
+        color: red;
+        font-size: 30px;
+        border: 2px solid red;
+        padding: 20px;
+        background: rgba(50, 0, 0, 0.5);
+        animation: pulse 1s infinite;
+        font-family: 'Share Tech Mono', monospace;
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+        70% { box-shadow: 0 0 0 20px rgba(255, 0, 0, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+    }
+
+</style>
+</head>
+<body>
+
+    <!-- Audio Player -->
+    <audio id="music" loop>
+        <source src="https://nathanprinsley-files.prinsh.com/data-1/mp3/meg-amp-dia-monster-dot-exe-remix.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Click Overlay -->
+    <div id="start-screen" onclick="startHacking()">
+        <h2>[ CLICK TO ACCESS SYSTEM ]</h2>
+    </div>
+
+    <!-- Effects -->
+    <div class="overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>HACKED BY<br>UNKNONE_HART</h1>
+        
+        <!-- The ID 'emotional-quote' is where the text will appear -->
+        <div class="sub-text" id="emotional-quote">
+            <!-- Text loads here automatically -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-bar">
+        PURPLE COBRA HACKER TEAM :: <a href="http://PURPULECOBRA.COM">PURPULECOBRA.COM</a>
+        <br>
+        <marquee scrollamount="10" style="margin-top: 5px; color: grey;">
+            GREETZ TO: UNKNONE_HART ~ AND YOU ~ SYSTEM COMPROMISED ~ DATA UPLOADING...
+        </marquee>
+    </div>
+
+<script>
+    // 1. List of 5 Emotional Quotes
+    const quotes = [
+        "BEING UNKNONE_HART IS JUST A SCRIPT I RUN.<br>BEING HAPPY IS A CODE I CANNOT CRACK.",
+        "I HAVE ROOT ACCESS TO THE WORLD,<br>BUT PERMISSION DENIED TO MY OWN HAPPINESS.",
+        "THE WORLD FEARS UNKNONE_HART.<br>BUT NO ONE SEES THE TEARS BEHIND THE TERMINAL.",
+        "I CAN BYPASS EVERY FIREWALL,<br>BUT I CANNOT ESCAPE THE DARKNESS IN MY MIND.",
+        "SYSTEM COMPROMISED SUCCESSFULLY.<br>MY SOUL: 404 NOT FOUND."
+    ];
+
+    // 2. Select a Random Quote
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    // 3. Display it
+    document.getElementById("emotional-quote").innerHTML = randomQuote;
+
+    // 4. Music Start Function
+    function startHacking() {
+        var audio = document.getElementById("music");
+        var screen = document.getElementById("start-screen");
+        
+        audio.play().then(() => {
+            screen.style.opacity = "0";
+            setTimeout(function(){
+                screen.style.display = "none";
+            }, 500);
+        }).catch(error => {
+            console.log("Audio play failed: " + error);
+        });
+    }
+</script>
+
+</body>
+</html>
